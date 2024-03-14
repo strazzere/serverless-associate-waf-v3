@@ -1,7 +1,10 @@
 coverage/
 test/
+.vscode/
 
 .editorconfig
-.travis.yml
+jest.config.js
+
+**/*.spec.js
 
 *.tgz
