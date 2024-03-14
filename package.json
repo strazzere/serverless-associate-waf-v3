@@ -1,18 +1,17 @@
 {
-  "name": "serverless-associate-waf",
-  "version": "1.2.1",
+  "name": "serverless-associate-waf-v3",
+  "version": "1.0.0",
   "description": "Associate a regional WAF with the AWS API Gateway used by your Serverless stack.",
   "main": "lib/index.js",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
-    "test": "jest --env node --coverage",
-    "coveralls": "cat ./coverage/lcov.info | coveralls"
+    "test": "jest --env node --coverage"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MikeSouza/serverless-associate-waf.git"
+    "url": "git+https://github.com/strazzere/serverless-associate-waf-v3.git"
   },
   "keywords": [
     "serverless",
@@ -25,24 +24,30 @@
     "api gateway",
     "apigateway",
     "aws waf",
-    "waf"
+    "waf",
+    "wafv2",
+    "govcloud"
   ],
   "author": "Mike Souza",
+  "maintainers": [
+    "Tim Strazzere"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/MikeSouza/serverless-associate-waf/issues"
+    "url": "https://github.com/strazzere/serverless-associate-waf-v3/issues"
   },
-  "homepage": "https://github.com/MikeSouza/serverless-associate-waf#readme",
+  "homepage": "https://github.com/strazzere/serverless-associate-waf-v3#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
     "access": "public"
   },
   "devDependencies": {
-    "coveralls": "^3.0.9",
-    "jest": "^25.1.0",
-    "serverless": "^1.63.0"
+    "@types/serverless": "^3.12.22",
+    "jest": "^29.7.0",
+    "serverless": "^3.38.0",
+    "typescript": "^5.4.2"
   },
-  "dependencies": {
-    "chalk": "^2.4.2"
+  "peerDependencies": {
+    "serverless": "3"
   }
 }
