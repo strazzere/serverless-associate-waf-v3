@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "@types/serverless": "^3.12.22",
-    "jest": "^29.7.0",
+    "jest": "^30.5.2",
     "serverless": "^3.38.0",
     "typescript": "^5.4.2"
   },
